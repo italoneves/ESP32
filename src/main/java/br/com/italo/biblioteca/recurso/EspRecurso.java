@@ -36,7 +36,7 @@ public class EspRecurso {
     public ResponseEntity<String> informacoesSensor(@RequestBody Informacoes informacoes){
 
         informacoesAtuais = informacoes;
-        return ResponseEntity.status(HttpStatus.CREATED).body("Informações capturadas");
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }
 
 
