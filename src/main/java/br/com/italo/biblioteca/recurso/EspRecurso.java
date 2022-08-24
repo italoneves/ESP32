@@ -23,7 +23,7 @@ import javax.validation.Valid;
 @RequestMapping(value = "/esp")
 public class EspRecurso {
 
-    private static Informacoes informacoesAtuais = new Informacoes("Sem info", "Sem info",
+    private static Informacoes informacoesAtuais = new Informacoes(0.0, "Sem info",
             "Sem info");
 
 
@@ -34,7 +34,6 @@ public class EspRecurso {
 
     @PostMapping(value = "/inserir-informacoes")
     public ResponseEntity<String> informacoesSensor(@RequestBody Informacoes informacoes){
-
         informacoesAtuais = informacoes;
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
     }

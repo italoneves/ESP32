@@ -4,21 +4,21 @@ import java.io.Serializable;
 
 public class Informacoes implements Serializable {
 
-    private String temperatura;
+    private Double temperatura;
     private String sensor;
     private String statusAr;
 
-    public Informacoes(String temperatura, String sensor, String statusAr) {
+    public Informacoes(Double temperatura, String sensor, String statusAr) {
         this.temperatura = temperatura;
         this.sensor = sensor;
         this.statusAr = statusAr;
     }
 
-    public String getTemperatura() {
+    public Double getTemperatura() {
         return temperatura;
     }
 
-    public void setTemperatura(String temperatura) {
+    public void setTemperatura(Double temperatura) {
         this.temperatura = temperatura;
     }
 
